@@ -13,19 +13,19 @@ module.exports = {
   entry: "./src/js/main.js",
   output: {
     filename: "js/main.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "templates"),
     clean: true,
   },
   devServer: {
-    static: path.resolve(__dirname, "dist"),
+    static: path.resolve(__dirname, "templates"),
     port: 3000,
     hot: true,
     liveReload: true,
-    watchFiles: ["src/*.html"],
+    watchFiles: ["src/*.html", "src/*.scss"],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      inject: false,
+      inject: true,
       scriptLoading: "defer",
       minify: true,
       template: "src/template-1.html",
@@ -34,7 +34,7 @@ module.exports = {
     new miniCssExtractPlugin({
       filename: "[name].css",
     }),
-    new HTMLInlineCSSWebpackPlugin(),
+    // new HTMLInlineCSSWebpackPlugin(),
   ],
   module: {
     rules: [
@@ -47,11 +47,16 @@ module.exports = {
             loader: "postcss-loader",
             options: {
               postcssOptions: {
-                plugins: [require("autoprefixer")],
+                plugins: [require("tailwindcss"), require("autoprefixer")],
               },
             },
           },
-          "sass-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              api: "modern",
+            },
+          },
         ],
       },
     ],
