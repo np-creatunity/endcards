@@ -25,7 +25,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      inject: true,
+      inject: false,
       scriptLoading: "defer",
       minify: true,
       template: "src/template-1.html",
@@ -34,7 +34,7 @@ module.exports = {
     new miniCssExtractPlugin({
       filename: "[name].css",
     }),
-    // new HTMLInlineCSSWebpackPlugin(),
+    new HTMLInlineCSSWebpackPlugin(),
   ],
   module: {
     rules: [

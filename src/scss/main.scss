@@ -1,7 +1,30 @@
+@use "fonts";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+.pulse {
+  animation: pulse 2s infinite;
+}
+
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Poppins", "Helvetica", sans-serif;
+  overflow: hidden;
+}
+// PHONE PORTRAIT
+@media screen and (orientation:portrait) {
+
+}
+@media screen and (orientation:landscape) {
 }
