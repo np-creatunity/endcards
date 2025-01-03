@@ -46,6 +46,20 @@ module.exports = ({ mode }) => {
         template: "src/template-3.html",
         filename: "template-3.html",
       }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/template-4.html",
+        filename: "template-4.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/template-5.html",
+        filename: "template-5.html",
+      }),
       new miniCssExtractPlugin({
         filename: "[name].css",
       }),
