@@ -172,6 +172,42 @@ module.exports = ({ mode }) => {
         template: "src/end005_v2.html",
         filename: "end005_v2.html",
       }),
+      // MEMORIAL
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end003_v3_memorial.html",
+        filename: "end003_v3_memorial.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end003_v4_memorial.html",
+        filename: "end003_v4_memorial.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end003_v5_memorial.html",
+        filename: "end003_v5_memorial.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v2c_memorial.html",
+        filename: "end001_v2c_memorial.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v5_memorial.html",
+        filename: "end001_v5_memorial.html",
+      }),
       new miniCssExtractPlugin({
         filename: "[name].css",
       }),
