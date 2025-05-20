@@ -2,7 +2,7 @@
 
 module.exports = {
   prefix: "tw-",
-  content: ["./**/*.html"],
+  content: ["./src/**/*.html"],
   theme: {
     // screens: {
     //   // phone: { max: "576px" },
