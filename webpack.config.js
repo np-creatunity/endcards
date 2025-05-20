@@ -208,6 +208,13 @@ module.exports = ({ mode }) => {
         template: "src/end001_v5_memorial.html",
         filename: "end001_v5_memorial.html",
       }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end001_v1.html",
+        filename: "evella_end001_v1.html",
+      }),
       new miniCssExtractPlugin({
         filename: "[name].css",
       }),
