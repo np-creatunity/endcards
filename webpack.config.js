@@ -215,6 +215,20 @@ module.exports = ({ mode }) => {
         template: "src/evella_end001_v1.html",
         filename: "evella_end001_v1.html",
       }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end002_v1.html",
+        filename: "evella_end002_v1.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end003_v1.html",
+        filename: "evella_end003_v1.html",
+      }),
       new miniCssExtractPlugin({
         filename: "[name].css",
       }),
