@@ -208,6 +208,7 @@ module.exports = ({ mode }) => {
         template: "src/end001_v5_memorial.html",
         filename: "end001_v5_memorial.html",
       }),
+      // EVELLA
       new HtmlWebpackPlugin({
         inject: mode == "production" ? false : true,
         scriptLoading: "defer",
@@ -228,6 +229,28 @@ module.exports = ({ mode }) => {
         minify: true,
         template: "src/evella_end003_v1.html",
         filename: "evella_end003_v1.html",
+      }),
+      // INDEPENDENCE
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end003_v6_independence.html",
+        filename: "end003_v6_independence.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end003_v7_independence.html",
+        filename: "end003_v7_independence.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end003_v8_independence.html",
+        filename: "end003_v8_independence.html",
       }),
       new miniCssExtractPlugin({
         filename: "[name].css",
