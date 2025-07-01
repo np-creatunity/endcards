@@ -208,7 +208,7 @@ module.exports = ({ mode }) => {
         template: "src/end001_v5_memorial.html",
         filename: "end001_v5_memorial.html",
       }),
-      // EVELLA
+      // EVELLA V1
       new HtmlWebpackPlugin({
         inject: mode == "production" ? false : true,
         scriptLoading: "defer",
@@ -229,6 +229,28 @@ module.exports = ({ mode }) => {
         minify: true,
         template: "src/evella_end003_v1.html",
         filename: "evella_end003_v1.html",
+      }),
+      // EVELLA V2
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end001_v2.html",
+        filename: "evella_end001_v2.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end002_v2.html",
+        filename: "evella_end002_v2.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end003_v3.html",
+        filename: "evella_end003_v3.html",
       }),
       // INDEPENDENCE
       new HtmlWebpackPlugin({
