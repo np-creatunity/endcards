@@ -274,6 +274,14 @@ module.exports = ({ mode }) => {
         template: "src/end003_v8_independence.html",
         filename: "end003_v8_independence.html",
       }),
+      // ANTIVIRUS
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/antivirus_end001_v1.html",
+        filename: "antivirus_end001_v1.html",
+      }),
       new miniCssExtractPlugin({
         filename: "[name].css",
       }),
