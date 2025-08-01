@@ -9,11 +9,11 @@ const HTMLInlineCSSWebpackPlugin =
   require("html-inline-css-webpack-plugin").default;
 
 module.exports = ({ mode }) => {
-  return {
-    mode: "development",
-    entry: "./src/js/main.js",
+  const config = {
+    mode: mode || "development",
+    entry: mode == "production" ? "./src/scss/main.scss" : "./src/js/main.js",
     output: {
-      filename: "js/main.js",
+      filename: mode == "production" ? "[name].js" : "js/main.js",
       path: path.resolve(__dirname, "templates"),
       clean: true,
     },
@@ -341,7 +341,15 @@ module.exports = ({ mode }) => {
       new miniCssExtractPlugin({
         filename: "[name].css",
       }),
-      mode != "production" && new HTMLInlineCSSWebpackPlugin(),
+      // MINTEGRAL
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/mintegral_antivirus_end001_v1.html",
+        filename: "mintegral_antivirus_end001_v1.html",
+      }),
+      new HTMLInlineCSSWebpackPlugin(),
     ],
     module: {
       rules: [
@@ -369,7 +377,9 @@ module.exports = ({ mode }) => {
       ],
     },
     optimization: {
-      minimizer: [new CssMinimizerPlugin()],
+      minimizer: ["...", new CssMinimizerPlugin()],
     },
   };
+
+  return config;
 };
