@@ -274,7 +274,7 @@ module.exports = ({ mode }) => {
         template: "src/end003_v8_independence.html",
         filename: "end003_v8_independence.html",
       }),
-      // LABOR DAY
+      // END003 LABOR DAY
       new HtmlWebpackPlugin({
         inject: mode == "production" ? false : true,
         scriptLoading: "defer",
@@ -302,6 +302,28 @@ module.exports = ({ mode }) => {
         minify: true,
         template: "src/end001_v2e_labor_day.html",
         filename: "end001_v2e_labor_day.html",
+      }),
+      // END002 LABOR DAY
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end002_v2_labor_day.html",
+        filename: "evella_end002_v2_labor_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end002_v3_labor_day.html",
+        filename: "evella_end002_v3_labor_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end002_v4_labor_day.html",
+        filename: "evella_end002_v4_labor_day.html",
       }),
       // ANTIVIRUS
       new HtmlWebpackPlugin({
