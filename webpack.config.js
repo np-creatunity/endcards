@@ -64,6 +64,13 @@ module.exports = ({ mode }) => {
         inject: mode == "production" ? false : true,
         scriptLoading: "defer",
         minify: true,
+        template: "src/template-6.html",
+        filename: "template-6.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
         template: "src/plug-in-heater.html",
         filename: "plug-in-heater.html",
       }),
@@ -324,6 +331,27 @@ module.exports = ({ mode }) => {
         minify: true,
         template: "src/evella_end002_v4_labor_day.html",
         filename: "evella_end002_v4_labor_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end006_v1_labor_day.html",
+        filename: "evella_end006_v1_labor_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end006_v2_labor_day.html",
+        filename: "evella_end006_v2_labor_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end006_v3_labor_day.html",
+        filename: "evella_end006_v3_labor_day.html",
       }),
       // ANTIVIRUS
       new HtmlWebpackPlugin({
