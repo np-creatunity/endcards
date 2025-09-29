@@ -466,6 +466,28 @@ module.exports = ({ mode }) => {
         template: "src/end006_v7.html",
         filename: "end006_v7.html",
       }),
+      // COLUMBUS DAY
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v9_columbus_day.html",
+        filename: "end001_v9_columbus_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end003_v9_columbus_day.html",
+        filename: "end003_v9_columbus_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v10_columbus_day.html",
+        filename: "end001_v10_columbus_day.html",
+      }),
       new miniCssExtractPlugin({
         filename: "[name].css",
       }),
