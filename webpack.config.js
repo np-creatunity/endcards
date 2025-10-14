@@ -259,6 +259,50 @@ module.exports = ({ mode }) => {
         template: "src/evella_end003_v3.html",
         filename: "evella_end003_v3.html",
       }),
+      // EVELLA BLACK FRIDAY
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end002_v3_black_friday.html",
+        filename: "evella_end002_v3_black_friday.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end002_v4_black_friday.html",
+        filename: "evella_end002_v4_black_friday.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end002_v5_black_friday.html",
+        filename: "evella_end002_v5_black_friday.html",
+      }),
+      // EVELLA V4
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end004_v4_black_friday.html",
+        filename: "evella_end004_v4_black_friday.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end004_v5_black_friday.html",
+        filename: "evella_end004_v5_black_friday.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end004_v6_black_friday.html",
+        filename: "evella_end004_v6_black_friday.html",
+      }),
       // INDEPENDENCE
       new HtmlWebpackPlugin({
         inject: mode == "production" ? false : true,
@@ -488,6 +532,69 @@ module.exports = ({ mode }) => {
         template: "src/end001_v10_columbus_day.html",
         filename: "end001_v10_columbus_day.html",
       }),
+      // BLACK FRIDAY
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v7_black_friday.html",
+        filename: "end001_v7_black_friday.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v8_black_friday.html",
+        filename: "end001_v8_black_friday.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v9_black_friday.html",
+        filename: "end001_v9_black_friday.html",
+      }),
+
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v11_black_friday.html",
+        filename: "end001_v11_black_friday.html",
+      }),
+
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v12_black_friday.html",
+        filename: "end001_v12_black_friday.html",
+      }),
+
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v13_black_friday.html",
+        filename: "end001_v13_black_friday.html",
+      }),
+
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end003_v5_black_friday.html",
+        filename: "end003_v5_black_friday.html",
+      }),
+
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end003_v6_black_friday.html",
+        filename: "end003_v6_black_friday.html",
+      }),
+
       new miniCssExtractPlugin({
         filename: "[name].css",
       }),
