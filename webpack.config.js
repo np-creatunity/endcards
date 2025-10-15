@@ -215,6 +215,50 @@ module.exports = ({ mode }) => {
         template: "src/end001_v5_memorial.html",
         filename: "end001_v5_memorial.html",
       }),
+      // VETERANS DAY
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v14_veterans_day.html",
+        filename: "end001_v14_veterans_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v15_veterans_day.html",
+        filename: "end001_v15_veterans_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v16_veterans_day.html",
+        filename: "end001_v16_veterans_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v17_veterans_day.html",
+        filename: "end001_v17_veterans_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v18_veterans_day.html",
+        filename: "end001_v18_veterans_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/end001_v19_veterans_day.html",
+        filename: "end001_v19_veterans_day.html",
+      }),
+
       // EVELLA V1
       new HtmlWebpackPlugin({
         inject: mode == "production" ? false : true,
