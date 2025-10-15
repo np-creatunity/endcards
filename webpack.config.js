@@ -303,6 +303,50 @@ module.exports = ({ mode }) => {
         template: "src/evella_end004_v6_black_friday.html",
         filename: "evella_end004_v6_black_friday.html",
       }),
+      // EVELLA VETERANS DAY
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end002_v10_veterans_day.html",
+        filename: "evella_end002_v10_veterans_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end002_v11_veterans_day.html",
+        filename: "evella_end002_v11_veterans_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end002_v12_veterans_day.html",
+        filename: "evella_end002_v12_veterans_day.html",
+      }),
+      //
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end004_v7_veterans_day.html",
+        filename: "evella_end004_v7_veterans_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end004_v8_veterans_day.html",
+        filename: "evella_end004_v8_veterans_day.html",
+      }),
+      new HtmlWebpackPlugin({
+        inject: mode == "production" ? false : true,
+        scriptLoading: "defer",
+        minify: true,
+        template: "src/evella_end004_v9_veterans_day.html",
+        filename: "evella_end004_v9_veterans_day.html",
+      }),
       // INDEPENDENCE
       new HtmlWebpackPlugin({
         inject: mode == "production" ? false : true,
